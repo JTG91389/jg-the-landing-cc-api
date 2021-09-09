@@ -1,0 +1,24 @@
+{
+    "type": "postgres",
+    "host": "host.docker.internal",
+    "port": 35432,
+    "username": "manager",
+    "password": "potato",
+    "database": "boilerplate-dev",
+    "synchronize": false,
+    "logging": false,
+    "entities": [
+       "src/entity/**/*{.ts,.js}"
+    ],
+    "migrations": [
+       "src/migration/**/*{.ts,.js}"
+    ],
+    "subscribers": [
+       "src/subscriber/**/*{.ts,.js}"
+    ],
+    "cli": {
+       "entitiesDir": "src/entity",
+       "migrationsDir": "src/migration",
+       "subscribersDir": "src/subscriber"
+    }
+ }
